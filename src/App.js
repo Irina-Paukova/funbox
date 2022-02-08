@@ -12,11 +12,11 @@ function App() {
     <>
       <Header />
 
-      <div className="content_flex">
+      <main className="content_flex">
         <Container_1 />
         <Container_2 />
         <Container_3 />
-      </div>
+      </main>
     </>
   );
 }
