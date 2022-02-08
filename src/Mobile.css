@@ -1,0 +1,20 @@
+@media (max-width: 640px) {
+    html {
+        align-items: start;
+    }
+    
+    .content_flex {
+        display: block;
+        margin: 0;
+    }
+
+    .card {
+        width: 220px;
+        margin: auto;
+    }
+
+    .border {
+        left: -19px;
+        transform: rotate(129deg)
+    }
+}

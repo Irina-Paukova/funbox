@@ -1,0 +1,43 @@
+@media (min-width: 641px) and (max-width: 960px) {
+    html {
+        align-items: start;
+    }
+    
+    .content_flex {
+        display: grid;
+        margin: 0;
+        justify-content: center;
+        grid-template-areas: "c1 c2" "c3 c3"
+    }
+
+    .container_cat_1 {
+        grid-area: c1;
+    }
+
+    .container_cat_2 {
+        grid-area: c2;
+    }
+
+    .container_cat_3 {
+        grid-area: c3;
+        width: 50%;
+        justify-self : center;
+    }
+
+    @media (min-height: 960px) {
+        .border {
+            left: -21px;
+            transform: rotate(132deg)
+        }
+
+        .card {
+            height: 400px;
+            font-size: 1.5vw;
+        }
+
+        html {
+            align-items: center;
+        }
+    }
+
+}

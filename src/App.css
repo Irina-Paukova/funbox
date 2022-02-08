@@ -1,38 +1,179 @@
-.App {
+html {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  background-image: url(components/images/Pattern.png);
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  color: rgb(177, 170, 170);
+  font-family: Exo2.0;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 100;
+  text-shadow: 0px 1px 1px #000000;
+  margin-top: 0;
+}
+
+.content_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_cat {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  font-family: Trebuchet MS;
+  text-align: left;
+  background-color: #F2F2F2;
+  padding: 5px 40px 0 38px;
+  position: relative;
+  height: 445px;
+  border-radius: 7px;
+  border: solid 3px #2EA8E6;
+  clip-path: polygon(0% 9.7%, 12% 0%, 0% 0%, 100% 0%, 100% 65%, 100% 100%, 0% 100%, 0% 100%);
+  margin: 0 2vw;
+}
+.selected_card {
+  border: solid 3px #D91667;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.4;
+  clip-path: polygon(0% 9.7%, 12% 0%, 0% 0%, 100% 0%, 100% 65%, 100% 100%, 0% 100%, 0% 100%);
+  z-index: 3;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.disabledCard {
+  border-color: #B3B3B3;
 }
 
-.App-link {
-  color: #61dafb;
+.border {
+  width: 70px;
+  height: 4px;
+  background-color: #2EA8E6;
+  position: absolute;
+  top: 17px;
+  left: -19px;
+  transform: rotate(128deg)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selected_border {
+  background-color: #D91667;
+}
+
+.disabled_border {
+  background-color: #B3B3B3;
+}
+
+.selected_span {
+  background: #D91667;
+}
+
+.weight {
+  background: #2EA8E6;
+  width: 40px;
+  padding: 10px 27px;
+  text-align: center;
+  border-radius: 1000px;
+  font-size: 21px;
+  color: #fff;
+  position: absolute;
+  bottom: -4px;
+  right: 15px;
+  z-index: 2;
+}
+
+.selected_weight {
+  background-color: #D91667;
+}
+
+.disabled_weight {
+  background-color: #3a3a3a;
+}
+
+.weight_num {
+  font-size: 42px;
+}
+
+.weight_num_05 {
+  margin-left: -11px;
+}
+
+.slogan {
+  color: #666666;
+}
+
+.selected_slogan {
+  color: #D91667;
+}
+
+.yammy {
+  font-size: 48px;
+  margin: 0;
+}
+
+.flavor {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.serving {
+  color: #666666;
+}
+
+.num {
+  font-weight: 700;
+}
+
+.div_hidden {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 7px;
+}
+
+img {
+  width: 300px;
+  margin-bottom: -80px;
+  margin-left: -18px;
+}
+
+.container_cat_link {
+  color:white;
+  font-size: 13px;
+}
+
+.disabled_container_cat_link {
+  color: #FFFF66;
+}
+
+.buy {
+  text-decoration-style: dashed;
+  color: rgb(81, 144, 240);
+}
+
+.ended {
+  color: #FFFF66;
 }
