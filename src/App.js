@@ -3,9 +3,9 @@ import './Tablet.css';
 import './Mobile.css';
 import './Script.js';
 import Header from './components/Header';
-import Container_1 from './components/Container_1'
-import Container_2 from './components/Container_2'
-import Container_3 from './components/Container_3'
+import Container1 from './components/Container1'
+import Container2 from './components/Container2'
+import Container3 from './components/Container3'
 
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
       <Header />
 
       <main className="content_flex">
-        <Container_1 />
-        <Container_2 />
-        <Container_3 />
+        <Container1 />
+        <Container2 />
+        <Container3 />
       </main>
     </>
   );

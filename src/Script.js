@@ -1,6 +1,5 @@
 function disabled(number) {
     let card = document.querySelectorAll(".card")[number];
-    let link = document.querySelectorAll(".buy")[number];
     let end = document.querySelectorAll(".container_cat_link")[number];
     let flavor = document.querySelectorAll(".flavor")[number].innerHTML;
 

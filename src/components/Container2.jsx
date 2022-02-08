@@ -1,7 +1,7 @@
 import React from 'react'
 import disabled from '../Script.js';
 
-function Container_2 (){
+function Container2 (){
 	return(
         <div className="container_cat container_cat_2">
             <div className="card card2" onClick={ function() {
@@ -9,7 +9,7 @@ function Container_2 (){
                 document.querySelector(".weight2").classList.toggle("selected_weight");
                 document.querySelector(".border2").classList.toggle("selected_border");
 
-                if(document.querySelector(".card2").className == "card card2 selected_card") {
+                if(document.querySelector(".card2").className === "card card2 selected_card") {
                     document.querySelector(".card2").onmouseleave = function() {
                         document.querySelector(".slogan2").innerHTML = "Котэ не одобряет?";
                         document.querySelector(".slogan2").classList.add("selected_slogan");
@@ -36,16 +36,16 @@ function Container_2 (){
                     <span className="num">2</span> мыши в подарок
                 </p>
                 <div className="div_hidden">
-                    <img src={require("./images/Photo.png")} />
+                    <img src={require("./images/Photo.png")} alt="Котэ" />
                 </div>
             </div>
             <p className="container_cat_link">Что сидишь? Порадуй котэ, 
-                <a className='buy' href="#" onClick={ function(e) {
+                <a className='buy' href="https://www.youtube.com/watch?v=HIcSWuKMwOw&ab_channel=10Hours" onClick={ function(e) {
                      document.querySelector(".card2").classList.toggle("selected_card");
                      document.querySelector(".weight2").classList.toggle("selected_weight");
                      document.querySelector(".border2").classList.toggle("selected_border");
 
-                    if(document.querySelector(".card2").className == "card card2 selected_card") {
+                    if(document.querySelector(".card2").className === "card card2 selected_card") {
                         document.querySelector(".card2").onmouseleave = function() {
                         document.querySelector(".slogan2").innerHTML = "Котэ не одобряет?";
                         document.querySelector(".slogan2").classList.add("selected_slogan");
@@ -65,7 +65,7 @@ function Container_2 (){
 }
 
 let myInterval = setInterval(() => {
-    if (document.readyState == 'complete') {
+    if (document.readyState === 'complete') {
         if(false) {
             disabled(1);
         }
@@ -73,4 +73,4 @@ let myInterval = setInterval(() => {
     }
 }, 10)
 
-export default Container_2
+export default Container2
